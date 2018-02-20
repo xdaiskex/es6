@@ -315,7 +315,7 @@ getData('GET', 'http://jsonplaceholder.typicode.com/todos').then(function(data){
     console.log(err);
 }); */
 
-let promiseToCleanRoom = new Promise((resolve, reject) => {
+/* let promiseToCleanRoom = new Promise((resolve, reject) => {
     let isClean = false;
 
     if (isClean){
@@ -329,7 +329,7 @@ promiseToCleanRoom.then(res => {
     console.log('the room is ' + res);
 }).catch(rej => {
     console.log('the room is ' + rej);
-});
+}); */
 
 /*
 let cleanRoom = () => {
@@ -366,23 +366,23 @@ cleanRoom().then(result => {
     console.log('finished ' + result);
 }); */
 
-/* let myPromise = new Promise((resolve, reject) => {
+let myPromise1 = new Promise((resolve, reject) => {
     setTimeout(() => {
-       resolve('Good to go'); 
+       resolve('promise 1 is fulfilled'); 
     }, 1000);
 });
 
 let myPromise2 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        reject('promise 2 - the promising');
+        resolve('promise 2 is fulfilled');
     }, 2000);
 });
 
-Promise.all([myPromise, myPromise2]).then(data =>{
-    console.log(`Data is ${data}`);
+Promise.all([myPromise1, myPromise2]).then(data =>{
+    console.log(data);
 }).catch(err => {
     console.log(err);
-}); */
+}); 
 
 /* let pokemon = number => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${number}`).then(res => {
