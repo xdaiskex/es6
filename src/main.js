@@ -205,13 +205,13 @@ console.log(add3(5, 6));
 
 let numbers = [1, 2, 3, 4, 5];
 
-let double = numbers.map(function(n){
+let double1 = numbers.map(function(n){
     return n * 2;
-})
+});
 let double2 = numbers.map((n) => n * 2);
 let double3 = numbers.map(n => n * 2);
 
-console.log(double);
+console.log(double1);
 console.log(double2);
 console.log(double3);
 
