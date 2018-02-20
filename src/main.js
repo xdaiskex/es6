@@ -213,7 +213,7 @@ let double3 = numbers.map(n => n * 2);
 
 console.log(double1);
 console.log(double2);
-console.log(double3);
+console.log(double3); */
 
 let person1 = {
     name: "Anthony",
@@ -253,7 +253,7 @@ let person4 = {
         });
     }
 }
-person4.showHobbies(); */
+person4.showHobbies(); 
 
 // Promises
 
