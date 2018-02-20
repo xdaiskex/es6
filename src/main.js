@@ -215,7 +215,7 @@ console.log(double1);
 console.log(double2);
 console.log(double3); */
 
-let person1 = {
+/* let person1 = {
     name: "Anthony",
     sayName: function(){
         console.log(`Hi I am  ${this.name}`);
@@ -253,7 +253,7 @@ let person4 = {
         });
     }
 }
-person4.showHobbies(); 
+person4.showHobbies();  */
 
 // Promises
 
@@ -268,8 +268,8 @@ var myPromise1 = new Promise(function(resolve, reject){
     setTimeout(() => resolve(4), 2000);
 });
 
-myPromise1.then((res) => {
-    res +=3;
+myPromise1.then(res => {
+    res += 3;
     console.log(res);
 });
 
@@ -315,9 +315,7 @@ getData('GET', 'http://jsonplaceholder.typicode.com/todos').then(function(data){
     console.log(err);
 }); */
 
-/* let promiseToCleanRoom = new Promise((resolve, reject) => {
-    //clean room
-
+let promiseToCleanRoom = new Promise((resolve, reject) => {
     let isClean = false;
 
     if (isClean){
@@ -325,16 +323,15 @@ getData('GET', 'http://jsonplaceholder.typicode.com/todos').then(function(data){
     }else{
         reject('not clean');
     }
-
-    //don't clean room
 });
 
-promiseToCleanRoom.then((fromResolve) => {
-    console.log('the room is ' + fromResolve);
-}).catch((fromReject) => {
-    console.log('the room is ' + fromReject);
+promiseToCleanRoom.then(res => {
+    console.log('the room is ' + res);
+}).catch(rej => {
+    console.log('the room is ' + rej);
 });
 
+/*
 let cleanRoom = () => {
     return new Promise((resolve, reject) => {
         resolve('cleaned the room');
