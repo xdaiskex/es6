@@ -366,7 +366,7 @@ cleanRoom().then(result => {
     console.log('finished ' + result);
 }); */
 
-let myPromise1 = new Promise((resolve, reject) => {
+/* let myPromise1 = new Promise((resolve, reject) => {
     setTimeout(() => {
        resolve('promise 1 is fulfilled'); 
     }, 1000);
@@ -382,9 +382,9 @@ Promise.all([myPromise1, myPromise2]).then(data =>{
     console.log(data);
 }).catch(err => {
     console.log(err);
-}); 
+});  */
 
-/* let pokemon = number => {
+let pokemon = number => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${number}`).then(res => {
         res.json().then(data => {
             console.log(`${data.name}, ${data.types[0].type.name} type, it can use ${data.abilities[1].ability.name}`);
@@ -394,4 +394,4 @@ Promise.all([myPromise1, myPromise2]).then(data =>{
     });
 };
 
-pokemon(8); */
+pokemon(1);
